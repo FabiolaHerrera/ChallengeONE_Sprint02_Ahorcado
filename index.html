@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta rel="icon" href="assets/Logo.png">
+        <title>Challenge - Desafío Enriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">                                     
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <script src="script.js"></script>
+    </head>
+    <body >
+        <div id="formulario">
+            <header>  
+                <div class="div-logo">
+                    <img class="logo" src="assets/Logo.png" alt="logo">
+                </div> 
+                <h1 class="titulo"> < ENCRIPTADOR / DESENCRIPTADOR  > </h1>   
+            </header>
+            <main >
+                <section>
+                    <div >
+                        <textarea id="textoEncriptar" class="texto-encriptar" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+                    </div>
+                    <div class="frame1">
+                        <p class="texto-validacion" > <img class="Vector" src="assets/Vector.png"> Sólo letras minúsculas y sin acento.</p>
+                    </div>
+                    <div class="frame3">
+                        <button id ="btnEncriptar" onclick="FnDesencriptar()" class="boton-desencriptar"><span class="texto-btn-desencriptar">Desencriptar</span> </button>
+                        <button id="btnDesencriptar" onclick="FnEncriptar()" class="boton-encriptar"><span class ="texto-btn-encriptar">Encriptar</span></button>
+                    </div>
+                </section>
+                <section>
+                    <div class="rectangulo1">
+                        <img id="muneco-position" class="Muneco" src="assets/Muneco.png">
+                    </div> 
+                    <textarea id="resultado" cols="18" rows="6" class="texto-desencriptar"></textarea>
+                    <button id="btnCopiar" onclick="FnCopiar()" class="boton-copiar"><span class ="texto-boton-copiar">Copiar</span></button>                    
+
+                    <div class="frame5">
+                        <span id="sinmensaje" class="texto-sinmensaje">Ningún mensaje fue encontrado.</span>
+                        <span id="mensajerectangulo" class="mensaje-desencriptar">Ingresa el texto que desees encriptar o desencriptar.</span>
+                    </div> 
+                </section>
+            </main>   
+            <footer class="footer">
+                <p>Diseñado por <a href="https://www.aluracursos.com/"><img class="img-pie" src="assets/alura-logo.1647533644.svg" alt="Alura"></a>
+                <a href="https://github.com/FabiolaHerrera/">Fabiola Herrera <img class="img-pie" src="assets/icons8-github-50.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/fabiolaherreraleiva/"> <img class="img-pie" src="assets/linkedin.png" alt="Linkedin"></a>
+                </p>   
+            </footer>  
+        </div>
+    </body>
+</html>
