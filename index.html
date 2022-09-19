@@ -21,28 +21,17 @@
             </header>
             <main >
                 <section>
-                    <div >
-                        <textarea id="textoEncriptar" class="texto-encriptar" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+                    <div>
+                        <img class="img-gif" src="assets/tristeza.gif" >
                     </div>
                     <div class="frame1">
-                        <p class="texto-validacion" > <img class="Vector" src="assets/Vector.png"> Sólo letras minúsculas y sin acento.</p>
+                        <p class="texto-validacion" > <img class="Vector" src="assets/Vector.png"> Máximo 8 letras</p>
                     </div>
                     <div class="frame3">
-                        <button id ="btnEncriptar" onclick="FnDesencriptar()" class="boton-desencriptar"><span class="texto-btn-desencriptar">Desencriptar</span> </button>
-                        <button id="btnDesencriptar" onclick="FnEncriptar()" class="boton-encriptar"><span class ="texto-btn-encriptar">Encriptar</span></button>
+                        <button id ="btnEncriptar" onclick="FnDesencriptar()" class="boton-nuevapalabra"><span class="texto-btn-desencriptar">Agregar Nueva Palabra</span> </button>
+                        <button id="btnDesencriptar" onclick="FnEncriptar()" class="boton-iniciarjuego"><span class ="texto-btn-encriptar">Iniciar Juego</span></button>
                     </div>
-                </section>
-                <section>
-                    <div class="rectangulo1">
-                        <img id="muneco-position" class="Muneco" src="assets/Muneco.png">
-                    </div> 
-                    <textarea id="resultado" cols="18" rows="6" class="texto-desencriptar"></textarea>
-                    <button id="btnCopiar" onclick="FnCopiar()" class="boton-copiar"><span class ="texto-boton-copiar">Copiar</span></button>                    
 
-                    <div class="frame5">
-                        <span id="sinmensaje" class="texto-sinmensaje">Ningún mensaje fue encontrado.</span>
-                        <span id="mensajerectangulo" class="mensaje-desencriptar">Ingresa el texto que desees encriptar o desencriptar.</span>
-                    </div> 
                 </section>
             </main>   
             <footer class="footer">
