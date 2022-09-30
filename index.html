@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <canvas width="650" height="430"></canvas>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta rel="icon" href="assets/Logo.png">
         <title>Challenge - Desafío Ahorcado</title>
@@ -22,14 +23,20 @@
             <main >
                 <section>
                     <div>
-                        <img class="img-gif" src="assets/tristeza.gif" >
+                        <input style="display:none" type="text" placeholder="Ingresar..." onkeypress="return  FNValidaNuevaPalabra(event)" maxlength="8" class="textonuevapalabra" id="TextoNuevaPalabra">  
+                    </div>
+                    <div>
+                      <input type="text" placeholder="..." onkeyup="FNCapturaLetra(this)" maxlength="1" class="letra" id="textoletra">  
                     </div>
                     <div class="frame1">
                         <p class="texto-validacion" > <img class="Vector" src="assets/Vector.png"> Máximo 8 letras</p>
                     </div>
                     <div class="frame3">
-                        <button id ="btnEncriptar" onclick="FnDesencriptar()" class="boton-nuevapalabra"><span class="texto-btn-desencriptar">Agregar Nueva Palabra</span> </button>
-                        <button id="btnDesencriptar" onclick="FnEncriptar()" class="boton-iniciarjuego"><span class ="texto-btn-encriptar">Iniciar Juego</span></button>
+                        <button id="btnIniciarJuego" onclick="FnIniciar(0)" class="boton-iniciarjuego"><span class ="texto-btn-iniciarjuego">Iniciar Juego</span></button>
+                        <button id ="btnNuevaPalabra" onclick="FnNuevaPalabra()" class="boton-nuevapalabra"><span class="texto-btn-nuevapalabra">Agregar Nueva Palabra</span> </button>
+                        <button style="display:none" id ="btnDesistir" onclick="FnDesistir()" class="boton-nuevapalabra"><span class="texto-btn-nuevapalabra">Desistir</span> </button>
+                        <button style="display:none" id="btnGuardarPalabra" onclick="FnGuardarNuevaPalabra()" class="boton-iniciarjuego"><span class ="texto-btn-iniciarjuego">Guardar y Empezar</span></button>
+                        <button style="display:none" id ="btnCancelarPalabra" onclick="FnCancelarNuevaPalabra()" class="boton-nuevapalabra"><span class="texto-btn-nuevapalabra">Cancelar</span> </button>
                     </div>
 
                 </section>
