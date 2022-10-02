@@ -312,15 +312,15 @@ flex-grow: 1;
 @media (min-width: 300px) and (max-width: 900px)  {
 
     .div-logo{
-        width: 120px;
-        height: 48px;
+        width: 100px;
+        height: 38px;
         left: 0px;
         top: 15px;
         }
     .titulo {
-        font-size: 25px; 
+        font-size: 20px; 
         width: 400px;
-        left: 150px;
+        left: 50px;
         top: 28px;
         }
         
