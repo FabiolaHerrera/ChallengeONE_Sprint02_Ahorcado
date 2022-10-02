@@ -315,7 +315,7 @@ flex-grow: 1;
         width: 100px;
         height: 38px;
         left: 0px;
-        top: 15px;
+        top: 10px;
         }
     .titulo {
         font-size: 20px; 
@@ -371,10 +371,10 @@ flex-grow: 1;
     line-height: 150%;
 }
 
-canvas {
+#canvas-juego {
     position : absolute;
-    top :0px;
-    left : 0px;
+    top :10px;
+    left : 0px!important;
     width: 600px;
 }
 
