@@ -310,6 +310,7 @@ flex-grow: 1;
 } 
 
 @media (min-width: 300px) and (max-width: 900px)  {
+
     .div-logo{
         width: 120px;
         height: 48px;
@@ -317,10 +318,10 @@ flex-grow: 1;
         top: 15px;
         }
     .titulo {
-        font-size: 23px; 
+        font-size: 25px; 
         width: 400px;
-        left: 5px;
-        top: 90px;
+        left: 150px;
+        top: 28px;
         }
         
     .img-gif{
@@ -348,13 +349,13 @@ flex-grow: 1;
         }
 
     .boton-iniciarjuego{     
-        width: 340px;
-        top: 410px;
+        width: 320px;
+        top: 520px;
         }
 
     .boton-nuevapalabra{
-           width: 340px;           
-           top: 100px;
+           width: 320px;           
+           top: 160px;
            position: absolute;
         }       
 
