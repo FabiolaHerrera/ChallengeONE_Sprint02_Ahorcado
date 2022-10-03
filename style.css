@@ -346,6 +346,11 @@ flex-grow: 1;
            position: absolute;
         }       
 
+           
+.letra{
+    left: 40px;
+    top: 275px;
+ }
         
 .textonuevapalabra {
     position: absolute;
