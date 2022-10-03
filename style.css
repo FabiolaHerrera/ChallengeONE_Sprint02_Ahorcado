@@ -373,13 +373,12 @@ flex-grow: 1;
 
 #canvas-juego {
     position : absolute;
-    top :10px;
+    top :50px;
     left : 0px!important;
-    width: 600px;
+    width: 390px;
 }
 
-
-        .footer{
+.footer{
             width: 350px;
             left: 20px;
             top: 580px;
