@@ -1,5 +1,5 @@
 # ChallengeONE_DesafioJuegoAhorcado
 # Insignia One Oracle Next Education
-# Descripcióm
+# Descripción
 # Requisitos
 # Trello
