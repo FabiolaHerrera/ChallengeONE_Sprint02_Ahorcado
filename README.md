@@ -1,6 +1,5 @@
-# ChallengeONE_DesafioEncriptadorDeTexto
+# ChallengeONE_DesafioJuegoAhorcado
 # Insignia One Oracle Next Education
 # Descripcióm
-# Llaves de Encriptación
 # Requisitos
 # Trello
