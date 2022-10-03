@@ -59,7 +59,7 @@
     function FnFindelJuego(){
         pincel.font="bold 15pt Verdana";
         pincel.fillStyle = "red";
-        pincel.fillText("FIN DEL JUEGO",450,150);
+        pincel.fillText("FIN DEL JUEGO",400,150);
         document.getElementById("textoletra").style.display = "none";
         document.getElementById("btnNuevaPalabra").style.display = "block";   
         document.getElementById("btnDesistir").style.display = "none";
@@ -69,7 +69,7 @@
         pincel.font="bold 15pt Verdana";
         pincel.fillStyle = "green";
         pincel.fillText("GANASTE,",450,150);
-        pincel.fillText("FELICIDADES!!",450,180);
+        pincel.fillText("FELICIDADES!!",400,180);
         document.getElementById("textoletra").style.display = "none";
         document.getElementById("btnNuevaPalabra").style.display = "block";  
         document.getElementById("btnDesistir").style.display = "none";  
@@ -81,21 +81,21 @@
         document.getElementById("btnDesistir").style.display = "none";  
         
         pincel.fillStyle = "black";   //propiedad
-        pincel.fillRect(150,100,650,330);     //canvas principal
+        pincel.fillRect(40,100,550,330);     //canvas principal
 
         pincel.font="bold 15pt Verdana";
         pincel.fillStyle = "green";
-        pincel.fillText("TE RENDISTE...",250,250);
-        pincel.fillText("INTENTALO DE NUEVO!!",250,300);
+        pincel.fillText("TE RENDISTE...",200,250);
+        pincel.fillText("INTENTALO DE NUEVO!!",200,300);
     }
 
     function FnIniciar(origen){
 
-        pincel.fillStyle = "black";   //propiedad
-        pincel.fillRect(150,100,650,270);     //canvas principal
+        pincel.fillStyle = "black";           //propiedad
+        pincel.fillRect(40,100,550,270);     //canvas principal
     
-        pincel.fillStyle = "#25221b";   //propiedad
-        pincel.fillRect(150,380,650,270);     //canvas principal
+        pincel.fillStyle = "#25221b";         //propiedad
+        pincel.fillRect(40,380,550,270);     //canvas LETRAS MALAS
         
         FNPalabraSecreta(origen);
 
@@ -106,7 +106,7 @@
         document.getElementById("textoletra").focus();       
 
         intentos = 0;
-        posicionFallo = 235;
+        posicionFallo = 140;
         juego =[];
     }
 
@@ -158,9 +158,9 @@
         switch(item) {
             case 1:
                 pincel.fillStyle = "white";     //color
-                pincel.fillRect(280,120,8,180); //barra vertical
-                pincel.fillRect(280,120,120,8); //barra horizontal
-                pincel.fillRect(400,120,8,30); //barra bajada
+                pincel.fillRect(100,120,8,180); //barra vertical
+                pincel.fillRect(100,120,120,8); //barra horizontal
+                pincel.fillRect(220,120,8,30); //barra bajada
                 //base triangulo
                 pincel.lineWidth = 5;
                 // Color de línea
@@ -170,13 +170,13 @@
                 // Comenzamos la ruta de dibujo, o path
                 pincel.beginPath();
                 // Mover a la esquina superior izquierda
-                pincel.moveTo(270,280);
+                pincel.moveTo(90,280);
                 // Dibujar la línea hacia la derecha
-                pincel.lineTo(300,280);
+                pincel.lineTo(120,280);
                 // Ahora la que va hacia abajo
-                pincel.lineTo(320,300); // A 80 porque esa es la altura
+                pincel.lineTo(130,300); // 
                 // La que va hacia la izquierda
-                pincel.lineTo(250,300);
+                pincel.lineTo(80,300);
                 // Y dejamos que la última línea la dibuje JS
                 pincel.closePath();
                 // Hacemos que se dibuje
@@ -189,7 +189,7 @@
                 //cabeza
                 pincel.beginPath();
                 pincel.fillStyle = "#F5CBA7";
-                pincel.arc(405,172,20,0,(Math.PI/180)*360,true);
+                pincel.arc(225,172,20,0,(Math.PI/180)*360,true);
                 pincel.fill(); 
               break;
             case 3:
@@ -202,7 +202,7 @@
                 pincel.fillStyle = "#9B59B6";
                 // Las variables indican el nombre de cada argumento para
                 // la función ellipse
-                let x = 406,
+                let x = 225,
                     y = 230,
                     radioX = 25,
                     radioY = 35,
@@ -223,21 +223,21 @@
               break;
             case 4:
                 //pierna izq
-                FNDibujaExtremidad(390,250,10,40);
-                FNDibujaZapato(395,300,7);
+                FNDibujaExtremidad(210,250,10,40);
+                FNDibujaZapato(215,300,7);
               break;
             case 5:
                 //pierna der
-                FNDibujaExtremidad(410,250,10,40);
-                FNDibujaZapato(415,300,7);
+                FNDibujaExtremidad(230,250,10,40);
+                FNDibujaZapato(235,300,7);
               break;
             case 6:
                 //brazo izq
-                FNDibujaExtremidad(350,210,40,10);
+                FNDibujaExtremidad(180,210,40,10);
               break;
             case 7:
                 //brazo der
-                FNDibujaExtremidad(420,210,40,10);
+                FNDibujaExtremidad(230,210,40,10);
               break;
             default:
               // code block
@@ -271,7 +271,7 @@
     function lineas(cantidad) {
 
         var inicioy = 50;
-        var iniciox = 170 + (8-cantidad)*30;
+        var iniciox = 90 + (8-cantidad)*30;
 
         for (var i=0;i<cantidad;i++) {
             pincel.fillStyle = "white";
@@ -321,7 +321,7 @@
         document.getElementById("btnIniciarJuego").style.display = "block";
         
         pincel.fillStyle = "black";   //propiedad
-        pincel.fillRect(150,100,650,330);     //canvas principal
+        pincel.fillRect(40,100,550,330);     //canvas principal
     }
 
 
@@ -359,12 +359,12 @@
     //INICIO PROGRAMA
     var pantalla = document.querySelector("canvas");
     var pincel = pantalla.getContext("2d");
-    var palabras = ["AGUA","RIO","HTML","ALURA"];
+    var palabras = ["AGUA","RIO","HTML","ALURA","FABIOLAH"];
     var seleccion = Math.floor(Math.random()*palabras.length); 
     var letras = Array.from(palabras[seleccion]);
     var posicion = new Array(palabras[seleccion]);
     var intentos = 0;
-    var posicionFallo = 235;
+    var posicionFallo = 140;
     var juego = new Array();
     var ganaste = 0;
 
@@ -373,7 +373,7 @@
     //console.log(palabras[seleccion]);
 
     pincel.fillStyle = "black";   //propiedad
-    pincel.fillRect(150,100,650,330);     //canvas principal
+    pincel.fillRect(40,100,550,330);     //canvas principal
 
     //estrella();
 
